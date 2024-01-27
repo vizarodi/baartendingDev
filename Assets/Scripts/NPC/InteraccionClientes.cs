@@ -19,17 +19,15 @@ public class InteraccionClientes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.E) && atendido == false && Contacto == true)
+        if (Input.GetKeyUp(KeyCode.E) && atendido == false && Contacto == true && NPC.LlegoAlAsiento != true  && NPC.Llego !=false)
         {
             atendido = true;
             cervezaEnEspera = true;
             NPC.Llego = false;
         }
-        if(cervezaEnEspera == true && Input.GetKeyUp(KeyCode.E) && NPC.Llego ==true && Contacto == true)
+        if(cervezaEnEspera == true && Input.GetKeyUp(KeyCode.E) && cervezaUI.activeInHierarchy && Contacto == true && NPC.LlegoAlAsiento == true)
         {
-            cervezaUI.SetActive(false);
-            cerveza.SetActive(true);
-            cervezaEnEspera = false;
+            defaultSet();
         }
     }
 
@@ -47,5 +45,13 @@ public class InteraccionClientes : MonoBehaviour
         {
             Contacto = false;
         }
+    }
+
+    private void defaultSet()
+    {
+        cervezaUI.SetActive(false);
+        cerveza.SetActive(true);
+        cervezaEnEspera = false;
+        atendido = false;
     }
 }

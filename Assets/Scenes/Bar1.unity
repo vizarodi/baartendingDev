@@ -2522,7 +2522,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 7.613809, y: 0.9115229}
+  m_Offset: {x: 7.5466585, y: 0.9115229}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2533,7 +2533,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0458536, y: 0.6736175}
+  m_Size: {x: 1.9115524, y: 0.6736175}
   m_EdgeRadius: 0
 --- !u!1 &599474226
 GameObject:
@@ -3625,7 +3625,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 9.205933, y: -2.1467328}
+  m_Offset: {x: 9.369013, y: -2.1467328}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3636,7 +3636,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1524353, y: 0.60489345}
+  m_Size: {x: 0.8262739, y: 0.6048937}
   m_EdgeRadius: 0
 --- !u!1 &956491436 stripped
 GameObject:
@@ -4461,7 +4461,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 7.617202, y: 2.8811338}
+  m_Offset: {x: 7.473307, y: 2.8811338}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4472,7 +4472,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.052639, y: 0.613914}
+  m_Size: {x: 1.7648497, y: 0.613914}
   m_EdgeRadius: 0
 --- !u!1 &1254752241
 GameObject:
@@ -7879,7 +7879,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 9.205933, y: -3.7617917}
+  m_Offset: {x: 9.369013, y: -3.7617917}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7890,7 +7890,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1524353, y: 0.6049433}
+  m_Size: {x: 0.8262739, y: 0.6049433}
   m_EdgeRadius: 0
 --- !u!1 &1944088575
 GameObject:
