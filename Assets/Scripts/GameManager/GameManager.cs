@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     public int dineroTotal;
+    public playerController playerController;
 
     void Awake()
     {
@@ -23,9 +24,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+        }
     }
-
 
     public void AddMoney(int dineroSumar)
     {
