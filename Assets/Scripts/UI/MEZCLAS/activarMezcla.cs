@@ -51,7 +51,6 @@ public class activarMezcla : MonoBehaviour
             calidadExc = true;
             Debug.LogError("EXCESIVO");
             CervezaItem.SetActive(true);
-            cervezacreada = true;
             //dmaciado liquido = 0 plata
         }
         if (cantidadActual >= 0.85f && cantidadActual < 0.9f)
