@@ -2292,6 +2292,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1372433870}
     m_Modifications:
+    - target: {fileID: 3118423362340891141, guid: 6979007bdf7e28e438249bf1a631f22a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6794591676918504241, guid: 6979007bdf7e28e438249bf1a631f22a, type: 3}
       propertyPath: m_Name
       value: wiman 1
@@ -2939,6 +2943,10 @@ PrefabInstance:
       propertyPath: cervezaUI
       value: 
       objectReference: {fileID: 1094002868}
+    - target: {fileID: 8994886054925451860, guid: f7100f0bae88fb147ae69258862dc14a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -5257,6 +5265,10 @@ PrefabInstance:
     - target: {fileID: 4838505165090716231, guid: e5df0259ee595fb48a3ebbd12e75b31a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958004341341119980, guid: e5df0259ee595fb48a3ebbd12e75b31a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7577,6 +7589,10 @@ PrefabInstance:
       propertyPath: cervezaUI
       value: 
       objectReference: {fileID: 1094002868}
+    - target: {fileID: 8339974156342248956, guid: 4b4798c77d9f5f848873e461d5eca8f9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -7988,6 +8004,10 @@ PrefabInstance:
       propertyPath: puntosDeCamino.Array.data[4]
       value: 
       objectReference: {fileID: 380884302}
+    - target: {fileID: 1956586608464252027, guid: c7ac1bc1eb8c614478ce35d0fc55e3db, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2931737952346154881, guid: c7ac1bc1eb8c614478ce35d0fc55e3db, type: 3}
       propertyPath: m_Name
       value: pelaos
@@ -8852,6 +8872,10 @@ PrefabInstance:
       propertyPath: cervezaUI
       value: 
       objectReference: {fileID: 1094002868}
+    - target: {fileID: 2562351090073810513, guid: c487ba881e7ee3245876e1acf9552e8c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5061176564193220114, guid: c487ba881e7ee3245876e1acf9552e8c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.6397583

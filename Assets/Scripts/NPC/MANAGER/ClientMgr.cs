@@ -40,7 +40,7 @@ public class ClientMgr : MonoBehaviour
             {
                 clienteRandom = Random.Range(0, cliente.Length);
                 Debug.Log("se eligio un cliente");
-                tiempoDeEspera = Random.Range(5, 9.5f);
+                tiempoDeEspera = Random.Range(3, 6f);
                 StartCoroutine(generarCliente());
             }
             else
