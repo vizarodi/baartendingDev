@@ -25,8 +25,11 @@ public class activarMezcla : MonoBehaviour
     public float velocidadCrecimiento = 0.5f;
     public GameObject CervezaItem;
 
+    [Header("Particulas")]
+    public GameObject particulaExito;
 
-    private void Update()
+
+    private void Update()            
     {
         cantidadActual = liquido.value;
 
@@ -58,6 +61,7 @@ public class activarMezcla : MonoBehaviour
             calidadPer = true;
             //buena calidad = 1plata
             CervezaItem.SetActive(true);
+            particulaExito.SetActive(true);
             Debug.Log("PERFECTO");
         }
         else if (cantidadActual < 0.85f && cantidadActual >= 0.6f)
@@ -105,7 +109,7 @@ public class activarMezcla : MonoBehaviour
             if (estaActive == false && fuePressed == false)
             {
                 slideInSound.pitch = Random.Range(0.89f, 1.5f);
-                StartCoroutine(precionaste());
+                //StartCoroutine(precionaste());
                 mezclaMen.SetActive(true);
                 slideInSound.Play();
                 activarOdesactivar.Play("Activar");
@@ -122,7 +126,7 @@ public class activarMezcla : MonoBehaviour
             {
                 slideOutSound.pitch = Random.Range(0.9f, 1.8f);
 
-                StartCoroutine(precionaste());
+                //StartCoroutine(precionaste());
                 slideOutSound.Play();
                 activarOdesactivar.Play("desacticar");
                 StartCoroutine(sacarPapel());

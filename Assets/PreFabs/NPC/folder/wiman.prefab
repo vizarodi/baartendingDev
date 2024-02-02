@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: a22831951dced7e49920e10b397324f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -103,7 +103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2963693510213032263
 Transform:
   m_ObjectHideFlags: 0
@@ -118,6 +118,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8119334577787110052}
+  - {fileID: 6740864993356766116}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4783944725035068221
@@ -138,7 +139,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   ver:
   - {fileID: 0}
   - {fileID: 0}
@@ -147,6 +147,7 @@ MonoBehaviour:
   - {fileID: 0}
   velocidad: 2.4
   Llego: 0
+  LlegoAlAsiento: 0
   salida: {fileID: 0}
   verSalida: {fileID: 0}
   termino: 0
@@ -209,8 +210,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bx: {fileID: 2948970257807804008}
   NPC: {fileID: 4783944725035068221}
+  cerveza: {fileID: 8600221489975700568}
+  cervezaUI: {fileID: 0}
   Contacto: 0
   atendido: 0
+  cervezaEnEspera: 0
 --- !u!61 &3127560941343238105
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -256,3 +260,54 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.51698905, y: 0.9898064}
   m_EdgeRadius: 0
+--- !u!1 &8600221489975700568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6740864993356766116}
+  - component: {fileID: 605712908832034198}
+  m_Layer: 7
+  m_Name: cerveza
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6740864993356766116
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600221489975700568}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2963693510213032263}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &605712908832034198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8600221489975700568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e325fc99f98d56848a5550a21b2a3188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  servir: {fileID: 0}
+  npc: {fileID: 4783944725035068221}
+  mucho: 0
+  genial: 0
+  bueno: 0
+  malo: 0
+  price: 0
