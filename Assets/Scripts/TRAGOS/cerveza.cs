@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class terminar : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class terminar : MonoBehaviour
 
     public int price;
 
+    public GameObject visualFeedBack;
+    public TMP_Text visualFeedBackText;
 
     // Start is called before the first frame update
     private void OnEnable()
@@ -23,7 +26,7 @@ public class terminar : MonoBehaviour
 
         if (mucho == true || malo == true)
         {
-            price = 0;
+            price = 0; //teni q ser bien wn para que te salga 0 :v
         } 
         if(genial == true)
         {
@@ -43,6 +46,8 @@ public class terminar : MonoBehaviour
         servir.calidadBue = false;
         servir.calidadMal = false;
         yield return new WaitForSeconds(10);
+        visualFeedBack.SetActive(true);
+        visualFeedBackText.text = price.ToString();
         npc.termino = true;
         pagar();
         gameObject.SetActive(false);
