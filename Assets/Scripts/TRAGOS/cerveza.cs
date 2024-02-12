@@ -48,6 +48,8 @@ public class terminar : MonoBehaviour
         yield return new WaitForSeconds(10);
         visualFeedBack.SetActive(true);
         visualFeedBackText.text = price.ToString();
+        yield return new WaitForSeconds(0.35f);
+        visualFeedBack.SetActive(false);
         npc.termino = true;
         pagar();
         gameObject.SetActive(false);
