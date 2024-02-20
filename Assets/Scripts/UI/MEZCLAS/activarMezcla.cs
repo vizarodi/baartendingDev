@@ -56,7 +56,7 @@ public class activarMezcla : MonoBehaviour
             CervezaItem.SetActive(true);
             //dmaciado liquido = 0 plata
         }
-        if (cantidadActual >= 0.85f && cantidadActual < 0.9f)
+        if (cantidadActual >= 0.80f && cantidadActual < 0.9f)
         {
             calidadPer = true;
             //buena calidad = 1plata
@@ -64,14 +64,14 @@ public class activarMezcla : MonoBehaviour
             particulaExito.SetActive(true);
             Debug.Log("PERFECTO");
         }
-        else if (cantidadActual < 0.85f && cantidadActual >= 0.6f)
+        else if (cantidadActual < 0.80f && cantidadActual >= 0.58f)
         {
             calidadBue = true;
             Debug.LogWarning("Bueno");
             CervezaItem.SetActive(true);
             //aceptable = 1/2plata
         }
-        else if(cantidadActual < 0.6)
+        else if(cantidadActual <= 0.57f)
         {
             calidadMal = true;
             //mediocre = 0plata
