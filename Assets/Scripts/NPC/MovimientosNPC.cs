@@ -15,6 +15,8 @@ public class MovimientosNPC : MonoBehaviour
     public GameObject verSalida;
     [SerializeField] public bool termino;
 
+    //animacion
+    public Animator anim;
     
 
     void Update()
@@ -23,10 +25,12 @@ public class MovimientosNPC : MonoBehaviour
         {
             // Mueve el NPC hacia el siguiente punto del camino
             transform.position = Vector3.MoveTowards(transform.position, puntosDeCamino[puntoActual].position, velocidad * Time.deltaTime);
+            anim.SetBool("IsWalking", true);
 
             // Si el NPC llega al punto, avanza al siguiente
             if (Vector3.Distance(transform.position, puntosDeCamino[puntoActual].position) < 0.1f)
             {
+                anim.SetBool("IsWalking", false);
                 ver[puntoActual].SetActive(true);
                 Llego = true;
                 if(puntoActual > 0 && Vector3.Distance(transform.position, puntosDeCamino[puntoActual].position) < 0.1f)
@@ -44,6 +48,8 @@ public class MovimientosNPC : MonoBehaviour
         if(termino == true)
         {
             transform.position = Vector3.MoveTowards(transform.position, salida.position, velocidad * Time.deltaTime);
+            anim.SetBool("IsWalking", true);
+
 
             if (Vector3.Distance(transform.position, salida.position) < 0.1f)
             {
