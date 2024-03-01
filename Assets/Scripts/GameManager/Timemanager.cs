@@ -10,9 +10,10 @@ public class Timemanager : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI timerText;
     float tiempoTranscurrido;
+
     void Update()
     {
-        if(timerText.text != "00:03")
+        if(timerText.text != "15:00")
         { 
             tiempoTranscurrido += Time.deltaTime;
             int minutes = Mathf.FloorToInt(tiempoTranscurrido / 60);
