@@ -1829,7 +1829,6 @@ GameObject:
   - component: {fileID: 415017758}
   - component: {fileID: 415017761}
   - component: {fileID: 415017760}
-  - component: {fileID: 415017759}
   m_Layer: 5
   m_Name: dinero
   m_TagString: Untagged
@@ -1856,19 +1855,6 @@ RectTransform:
   m_AnchoredPosition: {x: -328.58698, y: -68.47824}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &415017759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 415017757}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7166e25e73dd7ee4dbabcc856e96c9a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dineroDisponible: {fileID: 415017760}
 --- !u!114 &415017760
 MonoBehaviour:
   m_ObjectHideFlags: 0
