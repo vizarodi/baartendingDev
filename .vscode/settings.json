@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "JUEGOBAR.sln"
+    "dotnet.defaultSolution": "baartending.sln"
 }
