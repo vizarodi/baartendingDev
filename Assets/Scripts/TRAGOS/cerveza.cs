@@ -10,7 +10,8 @@ public class terminar : MonoBehaviour
 
     public bool mucho, genial, bueno, malo;
 
-    public int price;
+    public int price; 
+    public string priceFeedBack;
 
     public GameObject visualFeedBack;
     public TMP_Text visualFeedBackText;
@@ -27,14 +28,17 @@ public class terminar : MonoBehaviour
         if (mucho == true || malo == true)
         {
             price = 0; //teni q ser bien wn para que te salga 0 :v
+            priceFeedBack = "0";
         } 
         if(genial == true)
         {
             price = 5;
+            priceFeedBack = "5";
         }
         if(bueno == true)
         {
             price = 2;
+            priceFeedBack = "2";
         }
         StartCoroutine(terminandoPedido());
     }
@@ -45,9 +49,9 @@ public class terminar : MonoBehaviour
         servir.calidadPer = false;
         servir.calidadBue = false;
         servir.calidadMal = false;
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(3);
         visualFeedBack.SetActive(true);
-        visualFeedBackText.text = price.ToString();
+        visualFeedBackText.text = priceFeedBack;
         yield return new WaitForSeconds(1.10f);
         visualFeedBack.SetActive(false);
         npc.termino = true;
