@@ -9,7 +9,7 @@ public class Timemanager : MonoBehaviour
 
 
     [SerializeField] TextMeshProUGUI timerText;
-    float tiempoTranscurrido;
+    public float tiempoTranscurrido;
 
     void Update()
     {

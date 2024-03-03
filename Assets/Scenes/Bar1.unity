@@ -1593,6 +1593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 339942033}
+  tiempoTranscurrido: 0
 --- !u!114 &339942033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1846,7 +1847,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 02d72738dbd5fc14884bf25cfe755a15, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.17
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2439,7 +2440,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ba167431260f5034c9e7a2f5709e9572, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.29
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2751,6 +2752,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9204830070365332259, guid: 6979007bdf7e28e438249bf1a631f22a, type: 3}
+      propertyPath: KeyE
+      value: 
+      objectReference: {fileID: 634789435}
     - target: {fileID: 9204830070365332259, guid: 6979007bdf7e28e438249bf1a631f22a, type: 3}
       propertyPath: cervezaUI
       value: 
@@ -3178,6 +3183,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1093740008}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &634789435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5529760341656418634, guid: 33dfaafc80bac5a41b803fc32ef6a85b, type: 3}
+  m_PrefabInstance: {fileID: 1167926288369756272}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &642637182
 GameObject:
   m_ObjectHideFlags: 0
@@ -3374,6 +3384,10 @@ PrefabInstance:
       propertyPath: puntosDeCamino.Array.data[4]
       value: 
       objectReference: {fileID: 380884302}
+    - target: {fileID: 6921739364309611064, guid: f7100f0bae88fb147ae69258862dc14a, type: 3}
+      propertyPath: KeyE
+      value: 
+      objectReference: {fileID: 634789435}
     - target: {fileID: 6921739364309611064, guid: f7100f0bae88fb147ae69258862dc14a, type: 3}
       propertyPath: cervezaUI
       value: 
@@ -5395,7 +5409,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 349df35e28d6f7345a1a71d956aee55c, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5564,6 +5578,10 @@ PrefabInstance:
       propertyPath: visualFeedBackText
       value: 
       objectReference: {fileID: 415017760}
+    - target: {fileID: 4605461483902930192, guid: e5df0259ee595fb48a3ebbd12e75b31a, type: 3}
+      propertyPath: KeyE
+      value: 
+      objectReference: {fileID: 634789435}
     - target: {fileID: 4605461483902930192, guid: e5df0259ee595fb48a3ebbd12e75b31a, type: 3}
       propertyPath: cervezaUI
       value: 
@@ -7288,7 +7306,7 @@ MonoBehaviour:
   - {fileID: 1113080650}
   - {fileID: 968810385}
   tiempoDeEspera: 0
-  limite: 20
+  limite: 40
   cuenta: 0
   puedeSpawn: 0
 --- !u!1 &1379902232
@@ -7904,6 +7922,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 380884302}
     - target: {fileID: 6238608007628202911, guid: 4b4798c77d9f5f848873e461d5eca8f9, type: 3}
+      propertyPath: KeyE
+      value: 
+      objectReference: {fileID: 634789435}
+    - target: {fileID: 6238608007628202911, guid: 4b4798c77d9f5f848873e461d5eca8f9, type: 3}
       propertyPath: cervezaUI
       value: 
       objectReference: {fileID: 1094002868}
@@ -8284,6 +8306,10 @@ PrefabInstance:
       propertyPath: visualFeedBackText
       value: 
       objectReference: {fileID: 415017760}
+    - target: {fileID: 3907952018644733018, guid: c7ac1bc1eb8c614478ce35d0fc55e3db, type: 3}
+      propertyPath: KeyE
+      value: 
+      objectReference: {fileID: 634789435}
     - target: {fileID: 3907952018644733018, guid: c7ac1bc1eb8c614478ce35d0fc55e3db, type: 3}
       propertyPath: cervezaUI
       value: 
@@ -9141,6 +9167,10 @@ PrefabInstance:
       propertyPath: visualFeedBackText
       value: 
       objectReference: {fileID: 415017760}
+    - target: {fileID: 1728884980900781763, guid: c487ba881e7ee3245876e1acf9552e8c, type: 3}
+      propertyPath: KeyE
+      value: 
+      objectReference: {fileID: 634789435}
     - target: {fileID: 1728884980900781763, guid: c487ba881e7ee3245876e1acf9552e8c, type: 3}
       propertyPath: cervezaUI
       value: 

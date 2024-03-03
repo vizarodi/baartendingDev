@@ -12,8 +12,7 @@ public class InteraccionClientes : MonoBehaviour
 
     public bool Contacto;
     public bool atendido;
-
-    public bool cervezaEnEspera;
+    public bool cervezaEnEspera =true;
 
 
     // Update is called once per frame
@@ -33,7 +32,7 @@ public class InteraccionClientes : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") )
         {
             Contacto = true;
         }

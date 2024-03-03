@@ -10,7 +10,7 @@ public class ClientMgr : MonoBehaviour
 
 
     public float tiempoDeEspera;
-    public int limite = 20;
+    public int limite = 40;
     public int cuenta = 0;
 
     public bool puedeSpawn;
